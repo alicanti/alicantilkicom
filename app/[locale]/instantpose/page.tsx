@@ -21,7 +21,7 @@ export default function InstantPosePage({ params: { locale } }: { params: { loca
           <div className="mb-8 flex items-start gap-6">
             <div className="flex-shrink-0">
               <Image 
-                src="/instantpose-icon.png" 
+                src="/instapose-icon.png" 
                 alt="InstantPose Icon" 
                 width={80} 
                 height={80}

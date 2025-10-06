@@ -13,8 +13,8 @@ export const metadata: Metadata = {
   keywords: ["Infrastructure", "Systems Engineering", "AI", "DevOps", "Proxmox", "Automation"],
   authors: [{ name: "Alican Tilki" }],
   icons: {
-    icon: '/instantpose-icon.png',
-    apple: '/instantpose-icon.png',
+    icon: '/instapose-icon.png',
+    apple: '/instapose-icon.png',
   },
   openGraph: {
     type: "website",

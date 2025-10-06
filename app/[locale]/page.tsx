@@ -67,7 +67,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
                 <div className="flex items-start gap-6 mb-6">
                   <div className="flex-shrink-0">
                     <Image 
-                      src="/instantpose-icon.png" 
+                      src="/instapose-icon.png" 
                       alt="InstantPose" 
                       width={80} 
                       height={80}
