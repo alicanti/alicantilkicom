@@ -1,0 +1,11 @@
+{
+  "node": {
+    "version": "18",
+    "startupFile": "server.js",
+    "mode": "production"
+  },
+  "env": {
+    "NODE_ENV": "production",
+    "SITE_URL": "https://alicantilki.com"
+  }
+}
