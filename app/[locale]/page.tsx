@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Sparkles } from "lucide-react";
 
 export default function HomePage({ params: { locale } }: { params: { locale: string } }) {
@@ -64,8 +65,14 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
             <Link href={`/${locale}/instantpose`} className="group block">
               <div className="glass-hover rounded-xl p-12">
                 <div className="flex items-start gap-6 mb-6">
-                  <div className="p-4 rounded-xl bg-gradient-to-br from-blue-500/20 to-purple-500/20 border border-blue-500/30">
-                    <Sparkles className="text-blue-400" size={32} />
+                  <div className="flex-shrink-0">
+                    <Image 
+                      src="/instantpose-icon.png" 
+                      alt="InstantPose" 
+                      width={80} 
+                      height={80}
+                      className="rounded-2xl transition-transform group-hover:scale-105"
+                    />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-3xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">

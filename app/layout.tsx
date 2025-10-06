@@ -12,6 +12,10 @@ export const metadata: Metadata = {
   description: "Engineering reliable systems—from bare metal and networks to AI-powered apps.",
   keywords: ["Infrastructure", "Systems Engineering", "AI", "DevOps", "Proxmox", "Automation"],
   authors: [{ name: "Alican Tilki" }],
+  icons: {
+    icon: '/instantpose-icon.png',
+    apple: '/instantpose-icon.png',
+  },
   openGraph: {
     type: "website",
     locale: "en_US",

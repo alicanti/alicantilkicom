@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { apps } from "@/data/apps";
 import { ArrowLeft, ExternalLink, CheckCircle2 } from "lucide-react";
 
@@ -17,10 +18,23 @@ export default function InstantPosePage({ params: { locale } }: { params: { loca
         </Link>
 
         <div className="glass rounded-2xl p-8 sm:p-12">
+          <div className="mb-8 flex items-start gap-6">
+            <div className="flex-shrink-0">
+              <Image 
+                src="/instantpose-icon.png" 
+                alt="InstantPose Icon" 
+                width={80} 
+                height={80}
+                className="rounded-2xl"
+              />
+            </div>
+            <div className="flex-1">
+              <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">{app.name}</h1>
+              <p className="text-xl text-slate-300 mb-6">{app.tagline}</p>
+            </div>
+          </div>
+
           <div className="mb-8">
-            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">{app.name}</h1>
-            <p className="text-xl text-slate-300 mb-6">{app.tagline}</p>
-            
             <div className="flex flex-wrap gap-2">
               {app.tags.map((tag) => (
                 <span key={tag} className="px-4 py-2 text-sm rounded-full bg-slate-800 text-slate-300">
