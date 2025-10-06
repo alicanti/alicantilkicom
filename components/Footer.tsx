@@ -25,7 +25,7 @@ export function Footer({ locale }: { locale: string }) {
                 <Linkedin size={20} />
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/alicanti"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-slate-400 hover:text-white transition-colors"
@@ -54,8 +54,8 @@ export function Footer({ locale }: { locale: string }) {
             <h4 className="text-white font-medium mb-4">Connect</h4>
             <ul className="space-y-2 text-sm">
               <li><a href="https://www.linkedin.com/in/alican-tilki-msc-1245a194/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">LinkedIn</a></li>
-              <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">GitHub</a></li>
-              <li><a href="mailto:contact@alicantilki.com" className="text-slate-400 hover:text-white transition-colors">Email</a></li>
+              <li><a href="https://github.com/alicanti" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">GitHub</a></li>
+              <li><a href="mailto:hello@alicantilki.com" className="text-slate-400 hover:text-white transition-colors">Email</a></li>
             </ul>
           </div>
 

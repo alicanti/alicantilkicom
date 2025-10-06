@@ -146,4 +146,4 @@ npm run build
 
 ---
 
-**Yardım**: Detaylı rehberlere bakın veya contact@alicantilki.com
+**Yardım**: Detaylı rehberlere bakın veya hello@alicantilki.com

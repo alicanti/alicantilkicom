@@ -60,8 +60,8 @@ export default function TermsPage() {
               <h2 className="text-2xl font-bold text-white mb-4">Contact</h2>
               <p>
                 If you have any questions about these Terms, please contact us at{" "}
-                <a href="mailto:contact@alicantilki.com" className="text-blue-400 hover:text-blue-300">
-                  contact@alicantilki.com
+                <a href="mailto:hello@alicantilki.com" className="text-blue-400 hover:text-blue-300">
+                  hello@alicantilki.com
                 </a>
               </p>
             </section>

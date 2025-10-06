@@ -213,7 +213,7 @@ Eğer:
 Hosting sağlayıcınızın teknik desteğine başvurun.
 
 ### Uygulama Sorunları
-Uygulama ile ilgili sorunlar için: contact@alicantilki.com
+Uygulama ile ilgili sorunlar için: hello@alicantilki.com
 
 ## ✅ Kontrol Listesi
 
