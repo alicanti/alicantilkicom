@@ -101,21 +101,9 @@ export default function AboutPage({ params: { locale } }: { params: { locale: st
               <li>• <strong className="text-white">Arbor Training</strong> - DDoS Protection</li>
             </ul>
 
-            <h2 className="text-2xl font-bold text-white mt-12 mb-4">Notable Projects</h2>
-            <div className="space-y-4 text-slate-300 mb-8">
-              <div>
-                <h3 className="text-lg font-semibold text-white">LifeWatch TR Cloud Infrastructure (2016)</h3>
-                <p className="text-sm">Established cloud environment for 36 servers supporting innovative mobile arrhythmia monitoring technology.</p>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold text-white">Ulusoy Lojistik Infrastructure (2016)</h3>
-                <p className="text-sm">Deployed cloud infrastructure for ERP, CRM, Exchange, and DNS servers with geographical redundancy.</p>
-              </div>
-            </div>
-
             <h2 className="text-2xl font-bold text-white mt-12 mb-4">Beyond Work</h2>
             <p className="text-slate-300 leading-relaxed mb-8">
-              When I'm not optimizing infrastructure, I enjoy exploring new technologies, contributing to open-source projects, and sharing knowledge with the engineering community. I'm particularly interested in learning Kubernetes, Istio, cloud platforms (AWS, Azure, GCP), Go programming, and Terraform.
+              When I'm not optimizing infrastructure, I enjoy exploring new technologies, contributing to open-source projects, and sharing knowledge with the engineering community.
             </p>
 
             <div className="flex flex-wrap items-center gap-4 pt-8 border-t border-slate-700">
