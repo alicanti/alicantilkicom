@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InstantPose - AI-Powered Pose Generation | Alican Tilki</title>
+  <meta name="description" content="InstantPose: Generate professional poses from a single selfie while keeping identity intact.">
+  <link rel="icon" href="/assets/images/instapose-icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <a href="/" class="logo">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="logo-gradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#3B82F6"/>
+              <stop offset="100%" stop-color="#8B5CF6"/>
+            </linearGradient>
+          </defs>
+          <path d="M20 2L35 11V29L20 38L5 29V11L20 2Z" fill="url(#logo-gradient)" opacity="0.2"/>
+          <path d="M20 2L35 11V29L20 38L5 29V11L20 2Z" stroke="url(#logo-gradient)" stroke-width="2" fill="none"/>
+          <circle cx="20" cy="20" r="3" fill="url(#logo-gradient)"/>
+          <circle cx="12" cy="12" r="2" fill="url(#logo-gradient)" opacity="0.8"/>
+          <circle cx="28" cy="12" r="2" fill="url(#logo-gradient)" opacity="0.8"/>
+          <circle cx="12" cy="28" r="2" fill="url(#logo-gradient)" opacity="0.8"/>
+          <circle cx="28" cy="28" r="2" fill="url(#logo-gradient)" opacity="0.8"/>
+          <line x1="20" y1="20" x2="12" y2="12" stroke="url(#logo-gradient)" stroke-width="1.5" opacity="0.6"/>
+          <line x1="20" y1="20" x2="28" y2="12" stroke="url(#logo-gradient)" stroke-width="1.5" opacity="0.6"/>
+          <line x1="20" y1="20" x2="12" y2="28" stroke="url(#logo-gradient)" stroke-width="1.5" opacity="0.6"/>
+          <line x1="20" y1="20" x2="28" y2="28" stroke="url(#logo-gradient)" stroke-width="1.5" opacity="0.6"/>
+        </svg>
+        <span>Alican Tilki</span>
+      </a>
+      
+      <button class="mobile-menu-toggle">☰</button>
+      
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/en/instantpose.html">InstantPose</a></li>
+        <li><a href="/en/about.html">About</a></li>
+        <li><a href="/en/contact.html">Contact</a></li>
+        <li class="lang-switcher">
+          <button class="lang-btn active" onclick="switchLanguage('en')">EN</button>
+          <button class="lang-btn" onclick="switchLanguage('tr')">TR</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <a href="/" class="back-link">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        Back to Home
+      </a>
+
+      <div class="glass">
+        <div class="case-study-header">
+          <div class="case-study-icon">
+            <img src="/assets/images/instapose-icon.png" alt="InstantPose Icon">
+          </div>
+          <div class="case-study-title">
+            <h1>InstantPose</h1>
+            <p style="color: var(--text-secondary); font-size: 1.125rem; margin-bottom: 1rem;">AI-powered pose generation with face preservation</p>
+            <div class="project-tags">
+              <span class="tag">Mobile</span>
+              <span class="tag">AI</span>
+              <span class="tag">Image Generation</span>
+              <span class="tag">Flutter</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Overview</h2>
+          <p>InstantPose is a mobile application that transforms a single selfie into professional poses while preserving the user's identity. Built with Flutter and powered by advanced AI models, it offers a seamless experience for users who want professional-looking photos without a photoshoot.</p>
+        </div>
+
+        <div class="section">
+          <h2>The Challenge</h2>
+          <p>Creating professional-looking photos typically requires expensive photoshoots, professional photographers, and multiple outfit changes. Users want to present themselves professionally on social media and professional platforms, but the barrier to entry is high. Existing AI solutions often fail to maintain facial identity or produce unrealistic results.</p>
+        </div>
+
+        <div class="section">
+          <h2>The Solution</h2>
+          <p>InstantPose leverages state-of-the-art AI image generation models to create professional poses from a single selfie. The app uses strict identity-preserving prompt guardrails to ensure the output maintains facial features while adapting pose, lighting, and background.</p>
+          
+          <h3>Key Features</h3>
+          <ul>
+            <li>25+ professional pose templates organized into themed packs</li>
+            <li>Strict identity-preserving prompt guardrails</li>
+            <li>Multi-pose packs for variety</li>
+            <li>High-quality image generation</li>
+            <li>Fast processing with optimized queuing</li>
+            <li>Subscription and individual purchase options via RevenueCat</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Technical Implementation</h2>
+          
+          <h3>Mobile Application</h3>
+          <p>Built with Flutter for cross-platform compatibility, the app provides a native experience on both iOS and Android. The UI is designed for simplicity, allowing users to upload a selfie, choose a pose template, and receive their generated image within seconds.</p>
+          
+          <h3>AI & Image Generation</h3>
+          <p>The core technology uses advanced AI image generation APIs with custom prompt engineering to maintain facial identity. Each pose template has carefully crafted prompts that balance creativity with identity preservation. The system includes:</p>
+          <ul>
+            <li>Identity-preserving AI models</li>
+            <li>Custom prompt guardrails to prevent identity drift</li>
+            <li>Quality control mechanisms</li>
+            <li>Optimized image processing pipeline</li>
+          </ul>
+
+          <h3>Infrastructure</h3>
+          <p>The backend infrastructure handles high-volume image processing with:</p>
+          <ul>
+            <li>Scalable cloud infrastructure for AI model inference</li>
+            <li>Intelligent queuing system for request management</li>
+            <li>Distributed caching for faster response times</li>
+            <li>Firebase integration for user management and analytics</li>
+            <li>Cloud storage for secure image handling</li>
+          </ul>
+
+          <h3>Monetization</h3>
+          <p>The app uses RevenueCat for subscription management, offering:</p>
+          <ul>
+            <li>Individual pose purchases for one-time users</li>
+            <li>Monthly unlimited subscriptions for power users</li>
+            <li>Flexible pricing tiers</li>
+            <li>Cross-platform subscription sync</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Results & Impact</h2>
+          <p>InstantPose has successfully democratized professional photography:</p>
+          <ul>
+            <li>Thousands of active users generating professional poses</li>
+            <li>High user satisfaction with identity preservation</li>
+            <li>Fast processing times (typically under 30 seconds)</li>
+            <li>Growing library of pose templates based on user feedback</li>
+            <li>Positive revenue growth through subscription model</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Technologies Used</h2>
+          <div class="project-tags" style="margin-top: 1rem;">
+            <span class="tag">Flutter</span>
+            <span class="tag">Dart</span>
+            <span class="tag">AI Image Generation</span>
+            <span class="tag">RevenueCat</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">Cloud Storage</span>
+            <span class="tag">Python</span>
+            <span class="tag">FastAPI</span>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>My Role</h2>
+          <p>As the infrastructure lead, I was responsible for:</p>
+          <ul>
+            <li>Designing and implementing the scalable backend infrastructure</li>
+            <li>Setting up the AI image generation pipeline</li>
+            <li>Optimizing request queuing and caching strategies</li>
+            <li>Implementing monitoring and alerting systems</li>
+            <li>Managing cloud resources and cost optimization</li>
+            <li>Ensuring data security and privacy compliance</li>
+            <li>Integrating RevenueCat for subscription management</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/en/instantpose.html">InstantPose</a></li>
+            <li><a href="/en/about.html">About</a></li>
+            <li><a href="/en/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="/en/privacy.html">Privacy Policy</a></li>
+            <li><a href="/en/terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Connect</h3>
+          <ul>
+            <li><a href="https://github.com/alicanti" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/alican-tilki-msc-1245a194/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="mailto:hello@alicantilki.com">Email</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Alican Tilki. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

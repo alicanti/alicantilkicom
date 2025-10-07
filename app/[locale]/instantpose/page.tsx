@@ -3,6 +3,13 @@ import Image from "next/image";
 import { apps } from "@/data/apps";
 import { ArrowLeft, ExternalLink, CheckCircle2 } from "lucide-react";
 
+export function generateStaticParams() {
+  return [
+    { locale: 'en' },
+    { locale: 'tr' },
+  ];
+}
+
 export default function InstantPosePage({ params: { locale } }: { params: { locale: string } }) {
   const app = apps[0]; // InstantPose is the first (and only) app
 

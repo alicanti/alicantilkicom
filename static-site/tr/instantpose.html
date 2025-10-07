@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InstantPose - AI Destekli Poz Üretimi | Alican Tilki</title>
+  <meta name="description" content="InstantPose: Tek bir selfie'den profesyonel pozlar oluşturun, kimliğinizi koruyun.">
+  <link rel="icon" href="/assets/images/instapose-icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <a href="/tr/" class="logo">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="logo-gradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#3B82F6"/>
+              <stop offset="100%" stop-color="#8B5CF6"/>
+            </linearGradient>
+          </defs>
+          <path d="M20 2L35 11V29L20 38L5 29V11L20 2Z" fill="url(#logo-gradient)" opacity="0.2"/>
+          <path d="M20 2L35 11V29L20 38L5 29V11L20 2Z" stroke="url(#logo-gradient)" stroke-width="2" fill="none"/>
+          <circle cx="20" cy="20" r="3" fill="url(#logo-gradient)"/>
+          <circle cx="12" cy="12" r="2" fill="url(#logo-gradient)" opacity="0.8"/>
+          <circle cx="28" cy="12" r="2" fill="url(#logo-gradient)" opacity="0.8"/>
+          <circle cx="12" cy="28" r="2" fill="url(#logo-gradient)" opacity="0.8"/>
+          <circle cx="28" cy="28" r="2" fill="url(#logo-gradient)" opacity="0.8"/>
+          <line x1="20" y1="20" x2="12" y2="12" stroke="url(#logo-gradient)" stroke-width="1.5" opacity="0.6"/>
+          <line x1="20" y1="20" x2="28" y2="12" stroke="url(#logo-gradient)" stroke-width="1.5" opacity="0.6"/>
+          <line x1="20" y1="20" x2="12" y2="28" stroke="url(#logo-gradient)" stroke-width="1.5" opacity="0.6"/>
+          <line x1="20" y1="20" x2="28" y2="28" stroke="url(#logo-gradient)" stroke-width="1.5" opacity="0.6"/>
+        </svg>
+        <span>Alican Tilki</span>
+      </a>
+      
+      <button class="mobile-menu-toggle">☰</button>
+      
+      <ul class="nav-links">
+        <li><a href="/tr/">Ana Sayfa</a></li>
+        <li><a href="/tr/instantpose.html">InstantPose</a></li>
+        <li><a href="/tr/about.html">Hakkımda</a></li>
+        <li><a href="/tr/contact.html">İletişim</a></li>
+        <li class="lang-switcher">
+          <button class="lang-btn" onclick="switchLanguage('en')">EN</button>
+          <button class="lang-btn active" onclick="switchLanguage('tr')">TR</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <a href="/tr/" class="back-link">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        Ana Sayfaya Dön
+      </a>
+
+      <div class="glass">
+        <div class="case-study-header">
+          <div class="case-study-icon">
+            <img src="/assets/images/instapose-icon.png" alt="InstantPose Icon">
+          </div>
+          <div class="case-study-title">
+            <h1>InstantPose</h1>
+            <p style="color: var(--text-secondary); font-size: 1.125rem; margin-bottom: 1rem;">Yüz koruma özelliği ile AI destekli poz üretimi</p>
+            <div class="project-tags">
+              <span class="tag">Mobil</span>
+              <span class="tag">AI</span>
+              <span class="tag">Görsel Üretimi</span>
+              <span class="tag">Flutter</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Genel Bakış</h2>
+          <p>InstantPose, tek bir selfie'yi profesyonel pozlara dönüştüren ve kullanıcının kimliğini koruyan bir mobil uygulamadır. Flutter ile geliştirilmiş ve gelişmiş AI modelleri ile desteklenen uygulama, profesyonel bir fotoğraf çekimi yapmadan profesyonel görünümlü fotoğraflar isteyen kullanıcılar için kusursuz bir deneyim sunar.</p>
+        </div>
+
+        <div class="section">
+          <h2>Sorun</h2>
+          <p>Profesyonel görünümlü fotoğraflar oluşturmak genellikle pahalı fotoğraf çekimleri, profesyonel fotoğrafçılar ve birden fazla kıyafet değişimi gerektirir. Kullanıcılar kendilerini sosyal medya ve profesyonel platformlarda profesyonel bir şekilde sunmak isterler, ancak giriş engeli yüksektir. Mevcut AI çözümleri genellikle yüz kimliğini koruyamaz veya gerçekçi olmayan sonuçlar üretir.</p>
+        </div>
+
+        <div class="section">
+          <h2>Çözüm</h2>
+          <p>InstantPose, tek bir selfie'den profesyonel pozlar oluşturmak için son teknoloji AI görsel üretim modellerinden yararlanır. Uygulama, çıktının poz, aydınlatma ve arka planı uyarlarken yüz özelliklerini korumasını sağlamak için katı kimlik koruma prompt korumaları kullanır.</p>
+          
+          <h3>Temel Özellikler</h3>
+          <ul>
+            <li>Temalı paketler halinde düzenlenmiş 25+ profesyonel poz şablonu</li>
+            <li>Katı kimlik koruma prompt korumaları</li>
+            <li>Çeşitlilik için çoklu poz paketleri</li>
+            <li>Yüksek kaliteli görsel üretimi</li>
+            <li>Optimize edilmiş kuyruk sistemi ile hızlı işleme</li>
+            <li>RevenueCat üzerinden abonelik ve tekli satın alma seçenekleri</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Teknik Uygulama</h2>
+          
+          <h3>Mobil Uygulama</h3>
+          <p>Platformlar arası uyumluluk için Flutter ile geliştirilmiş uygulama, hem iOS hem de Android'de yerel bir deneyim sunar. Kullanıcı arayüzü basitlik için tasarlanmıştır; kullanıcılar bir selfie yükleyebilir, bir poz şablonu seçebilir ve saniyeler içinde oluşturulan görsellerini alabilirler.</p>
+          
+          <h3>AI & Görsel Üretimi</h3>
+          <p>Temel teknoloji, yüz kimliğini korumak için özel prompt mühendisliği ile gelişmiş AI görsel üretim API'lerini kullanır. Her poz şablonu, yaratıcılık ve kimlik koruması arasında denge kuran özenle hazırlanmış promptlara sahiptir. Sistem şunları içerir:</p>
+          <ul>
+            <li>Kimlik koruyucu AI modelleri</li>
+            <li>Kimlik kaymasını önlemek için özel prompt korumaları</li>
+            <li>Kalite kontrol mekanizmaları</li>
+            <li>Optimize edilmiş görsel işleme hattı</li>
+          </ul>
+
+          <h3>Altyapı</h3>
+          <p>Backend altyapısı, yüksek hacimli görsel işlemeyi şu şekilde yönetir:</p>
+          <ul>
+            <li>AI model çıkarımı için ölçeklenebilir bulut altyapısı</li>
+            <li>İstek yönetimi için akıllı kuyruk sistemi</li>
+            <li>Daha hızlı yanıt süreleri için dağıtılmış önbellekleme</li>
+            <li>Kullanıcı yönetimi ve analitik için Firebase entegrasyonu</li>
+            <li>Güvenli görsel işleme için bulut depolama</li>
+          </ul>
+
+          <h3>Gelir Modeli</h3>
+          <p>Uygulama, abonelik yönetimi için RevenueCat kullanır ve şunları sunar:</p>
+          <ul>
+            <li>Tek seferlik kullanıcılar için tekli poz satın alımları</li>
+            <li>Yoğun kullanıcılar için aylık sınırsız abonelikler</li>
+            <li>Esnek fiyatlandırma seviyeleri</li>
+            <li>Platformlar arası abonelik senkronizasyonu</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Sonuçlar & Etki</h2>
+          <p>InstantPose, profesyonel fotoğrafçılığı başarıyla demokratikleştirdi:</p>
+          <ul>
+            <li>Profesyonel pozlar oluşturan binlerce aktif kullanıcı</li>
+            <li>Kimlik koruması ile yüksek kullanıcı memnuniyeti</li>
+            <li>Hızlı işleme süreleri (genellikle 30 saniyenin altında)</li>
+            <li>Kullanıcı geri bildirimlerine dayalı büyüyen poz şablonu kütüphanesi</li>
+            <li>Abonelik modeli ile pozitif gelir artışı</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Kullanılan Teknolojiler</h2>
+          <div class="project-tags" style="margin-top: 1rem;">
+            <span class="tag">Flutter</span>
+            <span class="tag">Dart</span>
+            <span class="tag">AI Görsel Üretimi</span>
+            <span class="tag">RevenueCat</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">Cloud Storage</span>
+            <span class="tag">Python</span>
+            <span class="tag">FastAPI</span>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Rolüm</h2>
+          <p>Altyapı lideri olarak sorumluluklarım:</p>
+          <ul>
+            <li>Ölçeklenebilir backend altyapısının tasarımı ve uygulanması</li>
+            <li>AI görsel üretim hattının kurulumu</li>
+            <li>İstek kuyruğu ve önbellekleme stratejilerinin optimizasyonu</li>
+            <li>İzleme ve uyarı sistemlerinin uygulanması</li>
+            <li>Bulut kaynaklarının yönetimi ve maliyet optimizasyonu</li>
+            <li>Veri güvenliği ve gizlilik uyumluluğunun sağlanması</li>
+            <li>Abonelik yönetimi için RevenueCat entegrasyonu</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Navigasyon</h3>
+          <ul>
+            <li><a href="/tr/">Ana Sayfa</a></li>
+            <li><a href="/tr/instantpose.html">InstantPose</a></li>
+            <li><a href="/tr/about.html">Hakkımda</a></li>
+            <li><a href="/tr/contact.html">İletişim</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Yasal</h3>
+          <ul>
+            <li><a href="/tr/privacy.html">Gizlilik Politikası</a></li>
+            <li><a href="/tr/terms.html">Kullanım Koşulları</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Bağlantılar</h3>
+          <ul>
+            <li><a href="https://github.com/alicanti" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/alican-tilki-msc-1245a194/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="mailto:hello@alicantilki.com">E-posta</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Alican Tilki. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
