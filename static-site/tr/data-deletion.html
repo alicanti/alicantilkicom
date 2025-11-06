@@ -1,223 +1,180 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veri Silme - Alican Tilki</title>
-    <meta name="description" content="Uygulama ve hizmetlerimizden kişisel verilerinizin silinmesini talep edin.">
-    <link rel="icon" type="image/png" href="/assets/images/POZZ-icon-app.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veri Silme - Alican Tilki</title>
+  <meta name="description" content="Uygulama ve hizmetlerimizden kişisel verilerinizin silinmesini talep edin.">
+  <link rel="icon" href="/assets/images/POZZ-icon-app.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="nav-container">
-        <div class="nav-content">
-            <a href="/tr/" class="logo-link">
-                <div class="logo">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <linearGradient id="logo-gradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                                <stop offset="0%" stop-color="#3B82F6"/>
-                                <stop offset="100%" stop-color="#8B5CF6"/>
-                            </linearGradient>
-                        </defs>
-                        <path d="M20 2L35 11V29L20 38L5 29V11L20 2Z" fill="url(#logo-gradient)" opacity="0.2"/>
-                        <path d="M20 2L35 11V29L20 38L5 29V11L20 2Z" stroke="url(#logo-gradient)" stroke-width="2" fill="none"/>
-                        <circle cx="20" cy="20" r="3" fill="url(#logo-gradient)"/>
-                        <circle cx="12" cy="12" r="2" fill="url(#logo-gradient)" opacity="0.8"/>
-                        <circle cx="28" cy="12" r="2" fill="url(#logo-gradient)" opacity="0.8"/>
-                        <circle cx="12" cy="28" r="2" fill="url(#logo-gradient)" opacity="0.8"/>
-                        <circle cx="28" cy="28" r="2" fill="url(#logo-gradient)" opacity="0.8"/>
-                        <line x1="20" y1="20" x2="12" y2="12" stroke="url(#logo-gradient)" stroke-width="1.5" opacity="0.6"/>
-                        <line x1="20" y1="20" x2="28" y2="12" stroke="url(#logo-gradient)" stroke-width="1.5" opacity="0.6"/>
-                        <line x1="20" y1="20" x2="12" y2="28" stroke="url(#logo-gradient)" stroke-width="1.5" opacity="0.6"/>
-                        <line x1="20" y1="20" x2="28" y2="28" stroke="url(#logo-gradient)" stroke-width="1.5" opacity="0.6"/>
-                    </svg>
-                </div>
-                <span class="logo-text">Alican Tilki</span>
-            </a>
+  <nav>
+    <div class="container">
+      <a href="/tr/" class="logo">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="logo-gradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#3B82F6"/>
+              <stop offset="100%" stop-color="#8B5CF6"/>
+            </linearGradient>
+          </defs>
+          <path d="M20 2L35 11V29L20 38L5 29V11L20 2Z" fill="url(#logo-gradient)" opacity="0.2"/>
+          <path d="M20 2L35 11V29L20 38L5 29V11L20 2Z" stroke="url(#logo-gradient)" stroke-width="2" fill="none"/>
+          <circle cx="20" cy="20" r="3" fill="url(#logo-gradient)"/>
+          <circle cx="12" cy="12" r="2" fill="url(#logo-gradient)" opacity="0.8"/>
+          <circle cx="28" cy="12" r="2" fill="url(#logo-gradient)" opacity="0.8"/>
+          <circle cx="12" cy="28" r="2" fill="url(#logo-gradient)" opacity="0.8"/>
+          <circle cx="28" cy="28" r="2" fill="url(#logo-gradient)" opacity="0.8"/>
+          <line x1="20" y1="20" x2="12" y2="12" stroke="url(#logo-gradient)" stroke-width="1.5" opacity="0.6"/>
+          <line x1="20" y1="20" x2="28" y2="12" stroke="url(#logo-gradient)" stroke-width="1.5" opacity="0.6"/>
+          <line x1="20" y1="20" x2="12" y2="28" stroke="url(#logo-gradient)" stroke-width="1.5" opacity="0.6"/>
+          <line x1="20" y1="20" x2="28" y2="28" stroke="url(#logo-gradient)" stroke-width="1.5" opacity="0.6"/>
+        </svg>
+        <span>Alican Tilki</span>
+      </a>
+      
+      <button class="mobile-menu-toggle">☰</button>
+      
+      <ul class="nav-links">
+        <li><a href="/tr/">Ana Sayfa</a></li>
+        <li><a href="/tr/pozz.html">POZZ</a></li>
+        <li><a href="/tr/about.html">Hakkımda</a></li>
+        <li><a href="/tr/contact.html">İletişim</a></li>
+        <li class="lang-switcher">
+          <button class="lang-btn" onclick="switchLanguage('en')">EN</button>
+          <button class="lang-btn active" onclick="switchLanguage('tr')">TR</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <line x1="3" y1="12" x2="21" y2="12"></line>
-                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                    <line x1="3" y1="18" x2="21" y2="18"></line>
-                </svg>
-            </button>
+  <main>
+    <div class="container">
+      <div class="glass">
+        <h1 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Veri Silme Talebi</h1>
+        <p style="color: var(--text-secondary); margin-bottom: 2rem;">Gizliliğiniz bizim için önemlidir. Uygulama ve hizmetlerimizden kişisel verilerinizin silinmesini talep etme hakkına sahipsiniz.</p>
 
-            <div class="nav-links">
-                <a href="/tr/" class="nav-link">Ana Sayfa</a>
-                <a href="/tr/pozz.html" class="nav-link">POZZ</a>
-                <a href="/tr/about.html" class="nav-link">Hakkımda</a>
-                <a href="/tr/contact.html" class="nav-link">İletişim</a>
-                <div class="language-switcher">
-                    <a href="/en/data-deletion.html" class="lang-link">EN</a>
-                    <span class="lang-separator">/</span>
-                    <a href="/tr/data-deletion.html" class="lang-link active">TR</a>
-                </div>
+        <h2 style="font-size: 1.75rem; margin-top: 2rem; margin-bottom: 1rem;">Veri Silme Nasıl Talep Edilir?</h2>
+        <p style="margin-bottom: 1.5rem;">Hesabınızı ve uygulamamızdan (POZZ dahil) ilişkili tüm kişisel verilerinizi silmek isterseniz, lütfen aşağıdaki adımları izleyin:</p>
+
+        <div style="display: grid; gap: 1.5rem; margin: 2rem 0;">
+          <div class="glass" style="display: flex; gap: 1.5rem; padding: 1.5rem;">
+            <div style="flex-shrink: 0; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple)); border-radius: 12px; font-size: 1.5rem; font-weight: 700; color: white;">1</div>
+            <div>
+              <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">E-posta Gönderin</h3>
+              <p style="color: var(--text-secondary);"><a href="mailto:hello@alicantilki.com" style="color: var(--accent-blue); text-decoration: none;">hello@alicantilki.com</a> adresine "Veri Silme Talebi" konu başlığıyla bir e-posta gönderin</p>
             </div>
-        </div>
-    </nav>
+          </div>
 
-    <!-- Main Content -->
-    <main class="main-container">
-        <div class="content-wrapper">
-            <div class="page-header">
-                <h1 class="page-title">Veri Silme Talebi</h1>
-                <p class="page-description">
-                    Gizliliğiniz bizim için önemlidir. Uygulama ve hizmetlerimizden kişisel verilerinizin silinmesini talep etme hakkına sahipsiniz.
-                </p>
+          <div class="glass" style="display: flex; gap: 1.5rem; padding: 1.5rem;">
+            <div style="flex-shrink: 0; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple)); border-radius: 12px; font-size: 1.5rem; font-weight: 700; color: white;">2</div>
+            <div>
+              <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Kimlik Bilgisi Sağlayın</h3>
+              <p style="color: var(--text-secondary);">Verilerinizi tanımlamamıza yardımcı olmak için hesabınızla ilişkili e-posta adresini veya kullanıcı kimliğinizi ekleyin</p>
             </div>
+          </div>
 
-            <div class="content-section">
-                <h2 class="section-title">Veri Silme Nasıl Talep Edilir?</h2>
-                <p class="text-content">
-                    Hesabınızı ve uygulamamızdan (POZZ dahil) ilişkili tüm kişisel verilerinizi silmek isterseniz, lütfen aşağıdaki adımları izleyin:
-                </p>
-
-                <div class="steps-container">
-                    <div class="step-card">
-                        <div class="step-number">1</div>
-                        <div class="step-content">
-                            <h3 class="step-title">E-posta Gönderin</h3>
-                            <p class="step-description">
-                                <a href="mailto:hello@alicantilki.com" class="email-link">hello@alicantilki.com</a> adresine "Veri Silme Talebi" konu başlığıyla bir e-posta gönderin
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="step-card">
-                        <div class="step-number">2</div>
-                        <div class="step-content">
-                            <h3 class="step-title">Kimlik Bilgisi Sağlayın</h3>
-                            <p class="step-description">
-                                Verilerinizi tanımlamamıza yardımcı olmak için hesabınızla ilişkili e-posta adresini veya kullanıcı kimliğinizi ekleyin
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="step-card">
-                        <div class="step-number">3</div>
-                        <div class="step-content">
-                            <h3 class="step-title">Onay</h3>
-                            <p class="step-description">
-                                Kimliğinizi doğrulayacağız ve talebinizi KVKK ve GDPR gibi gizlilik düzenlemelerinin gerektirdiği şekilde 30 gün içinde işleme alacağız
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <h2 class="section-title">Hangi Veriler Silinecek?</h2>
-                <p class="text-content">
-                    Veri silme talebinizi aldığımızda, kalıcı olarak şunları sileceğiz:
-                </p>
-
-                <ul class="data-list">
-                    <li class="data-item">
-                        <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg>
-                        <span>Hesap bilgileriniz (ad, e-posta, profil verileri)</span>
-                    </li>
-                    <li class="data-item">
-                        <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg>
-                        <span>Oluşturduğunuz veya yüklediğiniz tüm içerikler</span>
-                    </li>
-                    <li class="data-item">
-                        <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg>
-                        <span>Hesabınızla ilişkili kullanım verileri ve analizler</span>
-                    </li>
-                    <li class="data-item">
-                        <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg>
-                        <span>Topladığımız diğer tüm kişisel olarak tanımlanabilir bilgiler</span>
-                    </li>
-                </ul>
-
-                <h2 class="section-title">Önemli Notlar</h2>
-                <div class="info-box">
-                    <svg class="info-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <line x1="12" y1="16" x2="12" y2="12"></line>
-                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
-                    </svg>
-                    <div class="info-content">
-                        <p class="info-text">
-                            <strong>Veri silme işlemi kalıcıdır ve geri alınamaz.</strong> Verileriniz silindikten sonra hesabınızı veya ilişkili herhangi bir bilgiyi kurtaramazsınız.
-                        </p>
-                        <p class="info-text">
-                            Yasal gereklilikler veya meşru iş amaçları (dolandırıcılık önleme gibi) için belirli bilgileri saklayabiliriz, ancak tüm kişisel tanımlayıcılar kaldırılacaktır.
-                        </p>
-                        <p class="info-text">
-                            Silme işlemi genellikle tamamlanması 30 güne kadar sürer. İşlem tamamlandığında bir onay e-postası alacaksınız.
-                        </p>
-                    </div>
-                </div>
-
-                <h2 class="section-title">Yardıma mı İhtiyacınız Var?</h2>
-                <p class="text-content">
-                    Veri silme süreci veya gizlilik uygulamalarımız hakkında herhangi bir sorunuz varsa, lütfen <a href="mailto:hello@alicantilki.com" class="email-link">hello@alicantilki.com</a> adresinden bizimle iletişime geçmekten çekinmeyin.
-                </p>
-
-                <div class="cta-section">
-                    <a href="/tr/contact.html" class="btn-primary">İletişime Geçin</a>
-                    <a href="/tr/privacy.html" class="btn-secondary">Gizlilik Politikası</a>
-                </div>
+          <div class="glass" style="display: flex; gap: 1.5rem; padding: 1.5rem;">
+            <div style="flex-shrink: 0; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple)); border-radius: 12px; font-size: 1.5rem; font-weight: 700; color: white;">3</div>
+            <div>
+              <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Onay</h3>
+              <p style="color: var(--text-secondary);">Kimliğinizi doğrulayacağız ve talebinizi KVKK ve GDPR gibi gizlilik düzenlemelerinin gerektirdiği şekilde 30 gün içinde işleme alacağız</p>
             </div>
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3 class="footer-title">Alican Tilki</h3>
-                <p class="footer-text">Yapay zeka destekli uygulamalar ve büyük ölçekli altyapı konusunda uzmanlaşmış Sistem ve Altyapı Mühendisi.</p>
-            </div>
-
-            <div class="footer-section">
-                <h4 class="footer-heading">Hızlı Bağlantılar</h4>
-                <ul class="footer-links">
-                    <li><a href="/tr/">Ana Sayfa</a></li>
-                    <li><a href="/tr/pozz.html">POZZ</a></li>
-                    <li><a href="/tr/about.html">Hakkımda</a></li>
-                    <li><a href="/tr/contact.html">İletişim</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h4 class="footer-heading">Yasal</h4>
-                <ul class="footer-links">
-                    <li><a href="/tr/privacy.html">Gizlilik Politikası</a></li>
-                    <li><a href="/tr/terms.html">Kullanım Koşulları</a></li>
-                    <li><a href="/tr/data-deletion.html">Veri Silme</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h4 class="footer-heading">Bağlantı</h4>
-                <ul class="footer-links">
-                    <li><a href="https://www.linkedin.com/in/alican-tilki-msc-1245a194/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                    <li><a href="https://github.com/alicanti" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                    <li><a href="mailto:hello@alicantilki.com">E-posta</a></li>
-                </ul>
-            </div>
+          </div>
         </div>
 
-        <div class="footer-bottom">
-            <p>&copy; 2024 Alican Tilki. Tüm hakları saklıdır.</p>
-        </div>
-    </footer>
+        <h2 style="font-size: 1.75rem; margin-top: 2rem; margin-bottom: 1rem;">Hangi Veriler Silinecek?</h2>
+        <p style="margin-bottom: 1.5rem;">Veri silme talebinizi aldığımızda, kalıcı olarak şunları sileceğiz:</p>
 
-    <script src="/assets/js/main.js"></script>
+        <ul style="list-style: none; margin: 1.5rem 0; display: grid; gap: 1rem;">
+          <li class="glass" style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 1rem;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-blue)" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span style="color: var(--text-secondary);">Hesap bilgileriniz (ad, e-posta, profil verileri)</span>
+          </li>
+          <li class="glass" style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 1rem;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-blue)" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span style="color: var(--text-secondary);">Oluşturduğunuz veya yüklediğiniz tüm içerikler</span>
+          </li>
+          <li class="glass" style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 1rem;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-blue)" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span style="color: var(--text-secondary);">Hesabınızla ilişkili kullanım verileri ve analizler</span>
+          </li>
+          <li class="glass" style="display: flex; align-items: flex-start; gap: 0.75rem; padding: 1rem;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-blue)" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span style="color: var(--text-secondary);">Topladığımız diğer tüm kişisel olarak tanımlanabilir bilgiler</span>
+          </li>
+        </ul>
+
+        <h2 style="font-size: 1.75rem; margin-top: 2rem; margin-bottom: 1rem;">Önemli Notlar</h2>
+        <div class="glass" style="display: flex; gap: 1rem; padding: 1.5rem; background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.3);">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-blue)" stroke-width="2" style="flex-shrink: 0;">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          </svg>
+          <div>
+            <p style="color: var(--text-secondary); margin-bottom: 0.75rem;"><strong style="color: var(--text-primary);">Veri silme işlemi kalıcıdır ve geri alınamaz.</strong> Verileriniz silindikten sonra hesabınızı veya ilişkili herhangi bir bilgiyi kurtaramazsınız.</p>
+            <p style="color: var(--text-secondary); margin-bottom: 0.75rem;">Yasal gereklilikler veya meşru iş amaçları (dolandırıcılık önleme gibi) için belirli bilgileri saklayabiliriz, ancak tüm kişisel tanımlayıcılar kaldırılacaktır.</p>
+            <p style="color: var(--text-secondary); margin-bottom: 0;">Silme işlemi genellikle tamamlanması 30 güne kadar sürer. İşlem tamamlandığında bir onay e-postası alacaksınız.</p>
+          </div>
+        </div>
+
+        <h2 style="font-size: 1.75rem; margin-top: 2rem; margin-bottom: 1rem;">Yardıma mı İhtiyacınız Var?</h2>
+        <p style="margin-bottom: 2rem;">Veri silme süreci veya gizlilik uygulamalarımız hakkında herhangi bir sorunuz varsa, lütfen <a href="mailto:hello@alicantilki.com" style="color: var(--accent-blue); text-decoration: none;">hello@alicantilki.com</a> adresinden bizimle iletişime geçmekten çekinmeyin.</p>
+
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 3rem;">
+          <a href="/tr/contact.html" class="btn">İletişime Geçin</a>
+          <a href="/tr/privacy.html" class="btn btn-secondary">Gizlilik Politikası</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Navigasyon</h3>
+          <ul>
+            <li><a href="/tr/">Ana Sayfa</a></li>
+            <li><a href="/tr/pozz.html">POZZ</a></li>
+            <li><a href="/tr/about.html">Hakkımda</a></li>
+            <li><a href="/tr/contact.html">İletişim</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Yasal</h3>
+          <ul>
+            <li><a href="/tr/privacy.html">Gizlilik Politikası</a></li>
+            <li><a href="/tr/terms.html">Kullanım Koşulları</a></li>
+            <li><a href="/tr/data-deletion.html">Veri Silme</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Bağlantılar</h3>
+          <ul>
+            <li><a href="https://github.com/alicanti" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/alican-tilki-msc-1245a194/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="mailto:hello@alicantilki.com">E-posta</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Alican Tilki. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>
-
