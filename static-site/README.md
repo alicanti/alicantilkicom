@@ -8,14 +8,14 @@ Static HTML/CSS/JS website for alicantilki.com
 static-site/
 ├── index.html          # English home page
 ├── en/                 # English pages
-│   ├── instantpose.html
+│   ├── pozz.html
 │   ├── about.html
 │   ├── contact.html
 │   ├── privacy.html
 │   └── terms.html
 ├── tr/                 # Turkish pages
 │   ├── index.html
-│   ├── instantpose.html
+│   ├── pozz.html
 │   ├── about.html
 │   ├── contact.html
 │   ├── privacy.html
